@@ -7272,12 +7272,16 @@
             "title": "FileBrowser",
             "type": 1,
             "volumes": [{
-                    "bind": "/portainer/Files/AppData/Config/FileBrowser",
-                    "container": "/config"
+                    "bind": "/portainer/Files/AppData/Config/FileBrowser/filebrowser.db",
+                    "container": "/database/filebrowser.db"
                 },
                 {
-                    "bind": "/portainer/Files/AppData/Config",
-                    "container": "/myfiles"
+                    "bind": "/portainer/Files/AppData/Config/FileBrowser/settings.json",
+                    "container": "/config/settings.json"
+                },
+                {
+                    "bind": "/home/[user]",
+                    "container": "/srv"
                 }
             ]
         },
