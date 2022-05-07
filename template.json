@@ -7259,14 +7259,14 @@
                 "Other",
                 "Tools"
             ],
-            "description": "Web File Browser which can be used as a middleware or standalone app.",
-            "image": "80x86/filebrowser:latest",
-            "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/filebrowser.png",
+            "description": "File Browser is a create-your-own-cloud-kind of software where you can install it on a server, direct it to a path and then access your files through a nice web interface. You have many available features!",
+            "image": "filebrowser/filebrowser:latest",
+            "logo": "https://raw.githubusercontent.com/filebrowser/logo/master/icon.png",
             "name": "filebrowser",
             "note": "The default user and password is admin/admin.",
             "platform": "linux",
             "ports": [
-                "8082:8082/tcp"
+                "8080:80/tcp"
             ],
             "restart_policy": "unless-stopped",
             "title": "FileBrowser",
